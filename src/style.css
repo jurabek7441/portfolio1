@@ -1,0 +1,336 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital@0;1&family=Red+Hat+Display:ital@0;1&family=Roboto:ital@0;1&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.main {
+  margin: 0 auto;
+  max-width: 1440px;
+  background-color: #fff;
+}
+.home {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  /* padding: 0 165px; */
+}
+.navbar {
+  display: flex;
+  align-items: center;
+  padding: 66px 165px;
+  gap: 100px;
+}
+.menu {
+  display: flex;
+  gap: 40px;
+}
+.menu a {
+  color: #7e7f86;
+  font-family: "Red Hat Display";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-decoration: none;
+}
+.active {
+  color: #25202f;
+}
+
+/* about */
+
+.about {
+  display: flex;
+  padding: 0px 165px;
+}
+.aboutLeft {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: flex-start;
+}
+.aboutLeft p {
+  color: #666;
+  font-family: Red Hat Display;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%; /* 28.8px */
+}
+.aboutLeft p:hover{
+  transform: scale3d(1.3, 1.3, 1);
+  transition: 0.3s ease-in-out;
+}
+.aboutLeft h2 {
+  color: #25202f;
+  font-family: Red Hat Display;
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%;
+}
+.aboutLeft h5 {
+  color: #25202f;
+  font-family: Red Hat Display;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.aboutLeft h2:hover,
+.aboutLeft h5:hover{
+  background-color: #47444e0e;
+  transition: 0.6s ease-in-out;
+}
+.aboutLeft button {
+  padding: 14px 48px;
+  border-radius: 100px;
+  background: #8643dc;
+  border: none;
+  outline: none;
+  color: #fff;
+  text-align: center;
+  font-family: Red Hat Display;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  cursor: pointer;
+}
+.aboutLeft button:hover{
+  transform: scale(1.1);
+  transition: 0.3s ease-in-out;
+}
+.aboutRight {
+  position: relative;
+}
+.aboutRight figure img {
+  transform: translate(200px, -100px);
+}
+
+/* Services */
+
+.services {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  padding: 0px 165px;
+  margin-bottom: 100px;
+}
+.services > u {
+  color: #8643dc;
+  font-family: Red Hat Display;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.services h2 {
+  color: #25202f;
+  font-family: Red Hat Display;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  width: 21%;
+}
+.services .services_cardBox {
+  display: flex;
+  gap: 30px;
+}
+.services .services_cardBox .servicesCard {
+  display: flex;
+  flex-direction: column;
+  gap: 21px;
+}
+.services .services_cardBox .servicesCard .servicesCard_title {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+.services .services_cardBox .servicesCard .servicesCard_title img:hover{
+  transform: rotate(360deg);
+  transition: 0.5s ease-in-out;
+}
+.services .services_cardBox .servicesCard .servicesCard_title h5 {
+  color: #25202f;
+  font-family: Red Hat Display;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.services .services_cardBox .servicesCard p {
+  color: #47444e;
+  font-family: Red Hat Display;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px; /* 200% */
+}
+
+/* portfolio */
+
+.portfolio {
+  padding: 50px 165px;
+  background: linear-gradient(
+    180deg,
+    rgba(188, 133, 255, 0.062) 0%,
+    rgba(255, 177, 222, 0.06) 100%
+  );
+  backdrop-filter: blur(1px);
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.portfolio u {
+  color: #8643dc;
+  font-family: Red Hat Display;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.portfolio_title {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.portfolio_title h2 {
+  color: #25202f;
+  font-family: Red Hat Display;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  width: 20%;
+}
+.portfolio_title h3 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #25202f;
+  font-family: Red Hat Display;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-decoration-line: underline;
+}
+
+.portfolio_content {
+  display: flex;
+  align-items: center;
+}
+.portfolio_content figure img {
+  width: 100%;
+}
+
+/* contact */
+
+.contact {
+  padding: 50px 165px;
+  background: linear-gradient(
+    180deg,
+    rgba(188, 133, 255, 0.073) 0%,
+    rgba(255, 244, 251, 0.104) 100%
+  );
+  /* filter: blur(75px); */
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+}
+.contact u {
+  color: #8643dc;
+  font-family: Red Hat Display;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.contact_title {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.contact_title h2 {
+  color: #21232d;
+  font-family: Roboto;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 52px; /* 144.444% */
+  width: 50%;
+}
+.contact_title p {
+  color: #8643dc;
+  font-family: Roboto;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-decoration-line: underline;
+  text-transform: lowercase;
+}
+.contact_content {
+  display: flex;
+  flex-direction: column;
+  gap: 45px;
+}
+.contact_content input {
+  border: none;
+  padding: 17px 5px;
+  width: 100%;
+  outline: none;
+  border-bottom: 1px solid #dad2e3;
+  color: #a8a0b0;
+  font-family: Red Hat Display;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: capitalize;
+}
+.contact_content button {
+  padding: 18px 50px;
+  border-radius: 100px;
+  background: #8643dc;
+  border: none;
+  outline: none;
+  color: #fff;
+  text-align: center;
+  font-family: Red Hat Display;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+/* footer */
+
+.footer {
+  padding: 50px 165px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.footer h2 {
+  color: #21232d;
+  text-align: center;
+  font-family: Red Hat Display;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.footer_content{
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  padding: 30px 0;
+}
+.footer_content figure svg{
+  width: 25px;
+}
